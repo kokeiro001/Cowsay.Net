@@ -10,7 +10,7 @@ namespace Cowsay.Net
         {
             // オプションがあろうが全てまとめてセリフとして扱う。
             // TODO: オプションに応じて処理を分岐するようにする
-            var content = string.Join("", args).Trim();
+            var content = string.Join(" ", args).Trim();
 
             if (string.IsNullOrWhiteSpace(content))
             {
